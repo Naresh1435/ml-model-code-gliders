@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Analysis</title>
+    <script src="https://kit.fontawesome.com/34b63b38cf.js" crossorigin="anonymous"></script>
+    <style>
+         html{
+    scroll-behavior: smooth;
+} 
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 3vw;
+    color: white;
+}
+body {
+    position: relative;
+    background-color: rgb(235, 235, 235);
+    opacity: 80%;
+}
+nav {
+    background-color: rgb(93, 217, 74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    color: black;
+    border-bottom: 2px black solid;
+    z-index: 1;
+    box-shadow: 0 0 10px 0 black;
+}
+.navtitle {
+    font-size: 6.5vw;
+    font-family: cursive;
+    color: black;
+}   
+
+footer{
+    background-color: rgb(93, 217, 74);
+    text-align: center;
+    font-size: 1.1rem;
+    border-top: 2px black solid;
+    position: fixed;
+    bottom: 0%;
+    width: 100vw;
+    
+}
+footer div{
+    padding: 10px 0;
+    font-family: monospace;
+    font-size: 5vw;
+    color: black;
+
+}
+.sps{
+    height: 25vh;
+    width: 100%;
+}
+.contentcon{
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+.contentbox{
+    width: 70%;
+    background-color: black;
+    padding: 5vw;
+    border-radius: 1vw;
+}
+.contentcon .contentbox .contenthead{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 5vw;
+    padding: 2vw;
+}
+.contentbody{
+    padding: 2vw;
+}
+.featurehead{
+    font-style: italic;
+    font-size: vw;
+    padding: 2vw 0;
+}
+.featurelist{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    float: right;
+    
+}
+.btn button{
+    background-color: rgb(93, 217, 74);
+    border: none;
+    padding: 2vw;
+    margin-top: 2vw;
+    border-radius: 1vw;
+
+}
+    </style>
+</head>
+<body>
+    <nav>
+        
+        <div class="navtitle">
+            Welcome to Smart Analysis
+        </div>
+    </nav>
+    <div class="sps"></div>
+    <div class="contentcon">
+        <div class="contentbox">
+            <div class="contenthead">
+                Provided Dataset
+            </div>
+            <div class="conentbody">
+                <div class="featurehead">
+                    <u>Key Features:</u>
+                </div>
+                <div class="featurelist">
+                    <ul>
+                        <li>Retailer Country</li>
+                        <li>Order method Type</li>
+                        <li>Retailer Type</li>
+                        <li>Product line</li>
+                        <li>Product Type</li>
+                        <li>Product</li>
+                        <li>Quarter</li>
+                        <li>Revenue</li>
+                        <li>Quantity</li>
+                        <li>Gross margin</li>
+
+
+
+                    </ul>
+                </div>
+                <div class="btn">
+                    <a href="/Users/naresh_dev/Developments/SMART ANALYTICS/flask_app/smartanalyticspage2.html"><button>Let's Get Started  <i class="fa-solid fa-right-long"></i></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div> &copy;&#128509;By Team Code Gliders</div>
+    </footer>
+</body>
+</html>

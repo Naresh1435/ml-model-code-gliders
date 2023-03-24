@@ -54,6 +54,7 @@ def BasicModel():
     plt.title('Quarterly Revenue by Product Line')
     plt.xlabel('Product Line')
     plt.ylabel('Revenue')
+    plt.show()
     FigureToImg(plt)
     # Group the data by retailer country and year, and calculate the total revenue for each group
     grouped1 = df__parameters.groupby(['Retailer country', 'Year']).agg({'Revenue': 'sum'})
@@ -69,6 +70,7 @@ def BasicModel():
     plt.xlabel('Year')
     plt.ylabel('Growth Rate')
     plt.legend()
+    plt.show()
     FigureToImg(plt)
     grouped = df__parameters.groupby('Product').agg({'Revenue': 'sum'})
     top_products = grouped.sort_values('Revenue', ascending=False).head(10)
@@ -76,6 +78,7 @@ def BasicModel():
     plt.title('Top 10 Products by Revenue')
     plt.xlabel('Revenue')
     plt.ylabel('Product')
+    plt.show()
     FigureToImg(plt)
 
 
@@ -109,6 +112,7 @@ def Arimaforcasting():
     plt.title('Arima Forecast for Revenue')
     plt.xlabel('Date')
     plt.ylabel('Revenue')
+    plt.show()
     img_bytes = io.BytesIO()
     plt.savefig(img_bytes,format='png')
     img_bytes.seek(0)
